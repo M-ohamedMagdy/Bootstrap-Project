@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive web fundamentals project</title>
+  <!-- linking css for bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- linking css for fontAwesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ////////////////////// NAV BAR ////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex fw-bold text-white ms-5" href="index.html">ARSHA</a>
+      <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active p-lg-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#team">Team</a>
+          </li>
+          <li class="nav-item dropdown DropDown">
+            <a class="nav-link dropdown-toggle p-lg-3 drop-one" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Item 1</a></li>
+
+              <li class="dropdown DeepDropDown">
+                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Deep Drop Down
+                </a>
+                <ul class="dropdown-menu2">
+                  <li><a class="dropdown-item" href="#">Deep Item 1</a></li>
+                  <li><a class="dropdown-item" href="#">Deep Item 2</a></li>
+                  <li><a class="dropdown-item" href="#">Deep Item 3</a></li>
+                  <li><a class="dropdown-item" href="#">Deep Item 4</a></li>
+                  <li><a class="dropdown-item" href="#">Deep Item 5</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Item 2</a></li>
+              <li><a class="dropdown-item" href="#">Item 3</a></li>
+              <li><a class="dropdown-item" href="#">Item 4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about"><button class="btn rounded-pill btn-1 text-white mt-lg-2 ms-lg-2">Get Started</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ////////////////////// HERO ////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- grid -->
+  <div class="main text-center text-lg-start" id="top">
+    <div class="container pt-5 pb-5">
+      <!-- Row1 -->
+      <div class="row">
+        <!-- Col1 in Row1 -->
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+          <!-- Row1 in Col1 -->
+          <div class="row">
+            <div class="col">
+              <!-- Typography -->
+              <p class="h1 fw-bold text-white">Better Solutions For Your Business</p>
+              <p class="h3 text-white-50 mb-5">We are team of talented designers making websites with Bootstrap</p>
+            </div>
+          </div>
+          <!-- Row2 in Col1 -->
+          <div class="row mb-5">
+            <!-- Col1 in Row2 -->
+            <div class="col text-center text-lg-start">
+              <a href="#about"><button type="button" class="btn rounded-pill btn-2 ps-4 pe-4 pt-2 pb-2 me-2">Get
+                  Started</button></a>
+              <div class="d-inline-block ms-2">
+                <a href="https://www.youtube.com/" class="watch">
+                  <i class="fa-regular fa-circle-play watch-vid-icon"></i>
+                  <span class="text-white">Watch Video</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Col2 in Row1 -->
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+          <!-- image -->
+          <img src="./img/hero-img.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////// CLIENTS ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="row clients text-center ps-5 pe-5">
+    <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+      <img src="./img/clients/client-1.png">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+      <img src="./img/clients/client-2.png">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+      <img src="./img/clients/client-3.png">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+      <img src="./img/clients/client-4.png">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+      <img src="./img/clients/client-5.png">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0" id="about">
+      <img src="./img/clients/client-6.png">
+    </div>
+  </div>
+  <!-- ////////////////////// ABOUT ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="about-section mt-5 mb-5 position-relative">
+    <p class="fs-2">ABOUT US</p>
+    <!-- ::after pseudo element -->
+  </div>
+  <!-- container element -->
+  <div class="container mt-5 pt-3 pb-5">
+    <div class="row">
+      <div class="col-md-12 col-lg-6 mb-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+        <p>
+          <i class="fa-solid fa-check-double"></i>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+        <p>
+          <i class="fa-solid fa-check-double"></i>
+          Duis aute irure dolor in reprehenderit in voluptate velit
+        </p>
+        <p>
+          <i class="fa-solid fa-check-double"></i>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+        <div class="mt-4"><a href="#top"><button type="button" class="btn btn-1 btn-3 ps-4 pe-4 mb-md-5">Learn
+              More</button></a></div>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////// ACCORDION ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="row accordion-section ps-md-3 pe-md-3">
+    <div class="container ps-2 pe-2">
+      <div class="row">
+        <div class="col-lg-6 col-12 order-2 order-lg-1">
+          <h2>Eum ipsam laborum deleniti <span class="fw-bold">velit pariatur architecto aut nihil</span></h2>
+          <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt
+            ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+          <!-- flush accordion -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header ps-4" id="flush-heading1">
+                <button class="accordion-button collapsed acc-1 fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                  Non consectetur a erat nam at lectus urna duis?
+                </button>
+              </h2>
+              <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                  laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus
+                  non.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header ps-4" id="flush-heading2">
+                <button class="accordion-button collapsed acc-2 fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                  Feugiat scelerisque varius morbi enim nunc?
+                </button>
+              </h2>
+              <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                  interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                  pretium.
+                  Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt
+                  dui.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header ps-4" id="flush-heading3">
+                <button class="accordion-button collapsed acc-3 fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                  Dolor sit amet consectetur adipiscing elit?
+                </button>
+              </h2>
+              <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                  Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                  tellus
+                  pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu
+                  facilisis sed odio morbi quis</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12 order-1 order-lg-2 text-center d-lg-flex align-items-center justify-content-center">
+          <img src="./img/why-us.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////// PROGRESS ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="container progress-section mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center mb-md-3">
+        <img src="img/skills.png">
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <h2 class="fw-bold">Voluptatem dignissimos provident quasi corporis voluptates</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+        <!-- progress element -->
+        <section class="mt-3">
+          <span>HTML</span><span class="text-end">100%</span>
+          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </section>
+        <section class="mt-3">
+          <span>CSS</span><span class="text-end">90%</span>
+          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </section>
+        <section class="mt-3">
+          <span>JAVASCRIPT</span><span class="text-end">75%</span>
+          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar" style="width: 75%"></div>
+          </div>
+        </section>
+        <section class="mt-3">
+          <span>PHOTOSHOP</span><span class="text-end">55%</span>
+          <div class="progress" id="services" role="progressbar" aria-label="Basic example" aria-valuenow="55"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 55%"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////// SERVICES ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="services-section pt-5 pb-5 text-center">
+    <div class="position-relative serv-div">
+      <p class="fs-2">SERVICES</p>
+      <!-- ::after pseudo element -->
+    </div>
+    <div class="row pt-5">
+      <div class="col-xxl-1 col-xl-1 col-md-2"></div>
+      <div class="col-xxl-10 col-xl-10 col-md-8">
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+        iste officiis commodi quidem hic quas.
+      </div>
+      <div class="col-xxl-1 col-xl-1 col-md-2"></div>
+    </div>
+    <div class="row ps-5 pe-5">
+      <div class="col-xl-3 col-md-6 col-12">
+        <div class="card mt-5 shadow services-box" style="width: 100%">
+          <div class="card-body services-card text-start">
+            <i class="fa-solid fa-basketball"></i>
+            <a href="index.html">
+              <h5 class="card-title">Lorem Ipsum</h5>
+            </a>
+            <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 services-box">
+        <div class="card mt-5 shadow" style="width: 100%">
+          <div class="card-body services-card text-start">
+            <i class="fa-regular fa-file-lines"></i>
+            <a href="index.html">
+              <h5 class="card-title">Sed ut perspici</h5>
+            </a>
+            <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 services-box">
+        <div class="card mt-5 shadow" style="width: 100%">
+          <div class="card-body services-card text-start">
+            <i class="fa-solid fa-gauge-high"></i>
+            <a href="index.html">
+              <h5 class="card-title">Magni Dolores</h5>
+            </a>
+            <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-12 services-box">
+        <div class="card mt-5 shadow" style="width: 100%">
+          <div class="card-body services-card text-start">
+            <i class="fa-solid fa-layer-group"></i>
+            <a href="index.html">
+              <h5 class="card-title">Nemo Enim</h5>
+            </a>
+            <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////// CALL-TO-ACTION ////////////////////////////////////////////////////////////////////////////////// -->
+
+  <div class="call-to-action-section text-white">
+    <div class="row">
+
+      <div
+        class="col-12 col-lg-9 call-to-action-div text-center text-lg-start pt-5 pb-lg-5 ps-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+        <h3 class="fw-bold">Call To Action</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div
+        class="col-12 col-lg-3 pe-lg-4 pb-5 call-to-action-div d-flex flex-column justify-content-center align-items-center">
+        <a href="#top"><button type="button" class="btn rounded-pill btn-1 btn-4 text-white fw-bold">Call To
+            Action</button></a>
+      </div>
+      <div class="row-0" id="portfolio"></div>
+
+    </div>
+  </div>
+  <!-- ////////////////////// PORTFOLIO ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="portfolio-section pt-5 pb-5 text-center">
+    <div class="position-relative port-div">
+      <p class="fs-2">PORTFOLIO</p>
+      <!-- ::after pseudo element -->
+    </div>
+    <div class="row pt-5">
+      <div class="col-xxl-1 col-xl-1 col-md-2"></div>
+      <div class="col-xxl-10 col-xl-10 col-md-8">
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+        iste officiis commodi quidem hic quas.
+      </div>
+      <div class="col-xxl-1 col-xl-1 col-md-2"></div>
+    </div>
+    <ul class="portfolio-list mt-5 mb-5">
+      <li data-filter="" class="f-all portfolio-list-item"><a class="portfolio-link rounded-pill">All</a></li>
+      <li data-filter="" class="f-app portfolio-list-item"><a class="portfolio-link rounded-pill">App</a></li>
+      <li data-filter="" class="f-card portfolio-list-item"><a class="portfolio-link rounded-pill">Card</a></li>
+      <li data-filter="" class="f-web portfolio-list-item"><a class="portfolio-link rounded-pill">Web</a></li>
+    </ul>
+    <div class="container mb-4">
+      <div class="row position-relative img-row">
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-app">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-1.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">App1</span>
+              <span class="me-auto">App</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-web">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-2.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">Web1</span>
+              <span class="me-auto">Web</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-app">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-3.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">App2</span>
+              <span class="me-auto">App</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-card">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-4.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">Card1</span>
+              <span class="me-auto">Card</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-web">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-5.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">Web2</span>
+              <span class="me-auto">Web</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-app">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-6.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">App3</span>
+              <span class="me-auto">App</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-card">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-7.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">Card2</span>
+              <span class="me-auto">Card</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-card">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-8.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">Card3</span>
+              <span class="me-auto">Card</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3 div-img-container filter-web">
+          <div class="img-container">
+            <img src="./img/portfolio/portfolio-9.jpg" class="image-fluid">
+          </div>
+          <div class="img-container-title d-flex justify-content-between align-items-center p-2 d-none">
+            <div class="d-flex flex-column">
+              <span class="fs-5 fw-bold">Web3</span>
+              <span class="me-auto">Web</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row-0" id="team"></div>
+  </div>
+  <!-- ////////////////////// TEAM ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="team-section pt-5 pb-5 text-center">
+    <div class="position-relative team-div">
+      <p class="fs-2">TEAM</p>
+      <!-- ::after pseudo element -->
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-xxl-1 col-xl-1 col-md-2"></div>
+      <div class="col-xxl-10 col-xl-10 col-md-8">
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+        iste officiis commodi quidem hic quas.
+      </div>
+      <div class="col-xxl-1 col-xl-1 col-md-2"></div>
+    </div>
+    <section class="container team-members mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="member shadow d-flex justify-content-center align-items-start">
+            <div class="pic">
+              <img src="./img/team/team-1.jpg">
+            </div>
+            <div class="info ps-4 text-start position-relative">
+              <h4 class="fw-bold">Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <p class="pt-4">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+              <div class="fa-items">
+                <span><a href="index.html"><i class="fa-brands fa-square-twitter"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-square-instagram"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="member shadow d-flex justify-content-center align-items-start">
+            <div class="pic">
+              <img src="./img/team/team-2.jpg">
+            </div>
+            <div class="info ps-4 text-start position-relative">
+              <h4 class="fw-bold">Sarah Jhonson</h4>
+              <span>Product Manager</span>
+              <p class="pt-4">Aut maiores voluptates amet et quis praesentium qui senda para</p>
+              <div class="fa-items">
+                <span><a href="index.html"><i class="fa-brands fa-square-twitter"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-square-instagram"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4">
+          <div class="member shadow d-flex justify-content-center align-items-start">
+            <div class="pic">
+              <img src="./img/team/team-3.jpg">
+            </div>
+            <div class="info ps-4 text-start position-relative">
+              <h4 class="fw-bold">William Anderson</h4>
+              <span>CTO</span>
+              <p class="pt-4">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+              <div class="fa-items">
+                <span><a href="index.html"><i class="fa-brands fa-square-twitter"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-square-instagram"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4">
+          <div class="member shadow d-flex justify-content-center align-items-start">
+            <div class="pic">
+              <img src="./img/team/team-4.jpg">
+            </div>
+            <div class="info ps-4 text-start position-relative">
+              <h4 class="fw-bold">Amanda Jepson</h4>
+              <span>Accountant</span>
+              <p class="pt-4">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <div class="fa-items">
+                <span><a href="index.html"><i class="fa-brands fa-square-twitter"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-square-instagram"></i></a></span>
+                <span><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- ////////////////////// PRICING ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="pricing-section pt-5 pb-5 text-center">
+    <div class="position-relative pric-div">
+      <p class="fs-2">PRICING</p>
+      <!-- ::after pseudo element -->
+    </div>
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col">
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in
+          iste officiis commodi quidem hic quas.
+        </div>
+      </div>
+      <div class="row text-start pricing-offers">
+        <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
+          <div class="pricing-plan-box shadow">
+            <div class="pricing-plan-head">
+              <h5 class="mb-3">Free Plan</h5>
+              <h5>
+                <div class="fs-4 d-flex align-items-start">$ <span class="price">0</span> </div>
+                <p class="fs-6 per-month">per month</p>
+              </h5>
+            </div>
+            <ul class="pricing-list mt-5">
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Quam adipiscing vitae proin</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Nec feugiat nisl pretium</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Nulla at volutpat diam uteera</span>
+              </li>
+              <li class="mb-3 text-black-50">
+                <i class="fa-solid fa-xmark"></i>
+                <span class="text-black-50 text-decoration-line-through">Pharetra massa massa ultricies</span>
+              </li>
+              <li class="mb-3 text-black-50">
+                <i class="fa-solid fa-xmark"></i>
+                <span class="text-black-50 text-decoration-line-through">Massa ultricies mi quis hendrerit</span>
+              </li>
+            </ul>
+            <a href="#top"><button type="button" class="btn rounded-pill btn-5 btn-1 mt-5 ms-4">Get Started</button></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
+          <div class="pricing-plan-box shadow mt-4 mt-lg-0 business-plan position-relative">
+            <div class="pricing-plan-head">
+              <h5 class="mb-3">Business Plan</h5>
+              <h5>
+                <div class="fs-4 d-flex align-items-start">$ <span class="price">29</span> </div>
+                <p class="fs-6 per-month">per month</p>
+              </h5>
+            </div>
+            <ul class="pricing-list mt-5">
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Quam adipiscing vitae proin</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Nec feugiat nisl pretium</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Nulla at volutpat diam uteera</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Pharetra massa massa ultricies</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Massa ultricies mi quis hendrerit</span>
+              </li>
+            </ul>
+            <a href="#top"><button type="button" class="btn rounded-pill btn-6 btn-2 mt-5 ms-4">Get Started</button></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
+          <div class="pricing-plan-box shadow mt-4 mt-lg-0">
+            <div class="pricing-plan-head">
+              <h5 class="mb-3">Developer Plan</h5>
+              <h5>
+                <div class="fs-4 d-flex align-items-start">$ <span class="price">49</span> </div>
+                <p class="fs-6 per-month">per month</p>
+              </h5>
+            </div>
+            <ul class="pricing-list mt-5">
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Quam adipiscing vitae proin</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Nec feugiat nisl pretium</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Nulla at volutpat diam uteera</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Pharetra massa massa ultricies</span>
+              </li>
+              <li class="default-i mb-3">
+                <i class="fa-solid fa-check"></i>
+                <span class="text-black-50">Massa ultricies mi quis hendrerit</span>
+              </li>
+            </ul>
+            <a href="#top"><button type="button" class="btn rounded-pill btn-7 btn-1 mt-5 ms-4">Get Started</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////// FREQUENTLY-ASKED-QUESTIONS ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="faq-section pt-5 pb-5 text-center">
+    <div class="container">
+      <div class="position-relative faq-div">
+        <p class="fs-2">FREQUENTLY ASKED QUESTIONS</p>
+        <!-- ::after pseudo element -->
+      </div>
+      <div class="row pt-5">
+        <div class="col">
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in
+          iste officiis commodi quidem hic quas.
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-3">
+        <div class="col faq-accordion m-auto">
+          <div class="accordion accordion-flush" id="accordionFlushExample2">
+
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed fa-question-mark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <i class="fa-regular fa-circle-question"></i>
+                  <span class="faq-acc-head fs-6 fw-bold">Non consectetur a erat nam at lectus urna duis?</span>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample2">
+                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                  laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus
+                  non.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed fa-question-mark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <i class="fa-regular fa-circle-question"></i>
+                  <span class="faq-acc-head fs-6 fw-bold">Feugiat scelerisque varius morbi enim nunc?</span>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample2">
+                <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                  interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                  pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa
+                  tincidunt dui.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed fa-question-mark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <i class="fa-regular fa-circle-question"></i>
+                  <span class="faq-acc-head fs-6 fw-bold">Dolor sit amet consectetur adipiscing elit?</span>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample2">
+                <div class="accordion-body">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                  Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                  tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at
+                  elementum eu facilisis sed odio morbi quis</div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-headingfour">
+                <button class="accordion-button collapsed fa-question-mark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                  <i class="fa-regular fa-circle-question"></i>
+                  <span class="faq-acc-head fs-6 fw-bold">Tempus quam pellentesque nec nam aliquam sem et tortor
+                    consequat?</span>
+                </button>
+              </h2>
+              <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                data-bs-parent="#accordionFlushExample2">
+                <div class="accordion-body">Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                  suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit
+                  adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-headingfive">
+                <button class="accordion-button collapsed fa-question-mark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                  <i class="fa-regular fa-circle-question"></i>
+                  <span class="faq-acc-head fs-6 fw-bold">Tortor vitae purus faucibus ornare. Varius vel pharetra vel
+                    turpis nunc eget lorem dolor?</span>
+                </button>
+              </h2>
+              <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+                data-bs-parent="#accordionFlushExample2">
+                <div class="accordion-body">Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae
+                  ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                  eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row-0" id="contact"></div>
+    </div>
+  </div>
+  <!-- ////////////////////// CONTACT ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="contact-section pt-5 pb-5 text-center">
+    <div class="position-relative con-div">
+      <p class="fs-2">CONTACT</p>
+      <!-- ::after pseudo element -->
+    </div>
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col">
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.
+        </div>
+      </div>
+      <div class="row mt-5 d-flex justify-content-center">
+
+        <div
+          class="col-12 col-lg-4 me-lg-4 p-4 shadow d-flex flex-column align-items-start contact-col position-relative">
+          <div class="con-loc d-flex align-items-start text-start mb-2">
+            <div class="f-a">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="con-info ps-4">
+              <h3 class="fw-bold">Location:</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+          <div class="con-mail d-flex align-items-start text-start mb-2">
+            <div class="f-a">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="con-info ps-4">
+              <h3 class="fw-bold">Email:</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+          <div class="con-call d-flex align-items-start text-start mb-2">
+            <div class="f-a">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="con-info ps-4">
+              <h3 class="fw-bold">Call:</h3>
+              <p>+1 2345678910</p>
+            </div>
+          </div>
+          <div class="con-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.8054034726083!2d31.01849597543667!3d30.071111974910266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585b979b7d1dd9%3A0x88f29d027c44f959!2sInformation%20Technology%20Institute!5e0!3m2!1sen!2seg!4v1672498873065!5m2!1sen!2seg"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7 p-4 shadow text-start mt-5 mt-lg-0 contact-col position-relative">
+          <form class="row p-3">
+            <div class="col-md-6 mb-3">
+              <label for="inputEmail4" class="form-label">Your Name</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="inputPassword4" class="form-label">Your Email</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12 mb-3">
+              <label for="inputAddress" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="mb-3 mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="button" class="btn rounded-pill btn-8 btn-6 btn-2">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////// JOIN ////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="join-section pb-2 text-center">
+    <div class="container p-5 d-flex flex-column align-items-center">
+      <div class="col-lg-6">
+        <p class="fs-2 join-title">Join Our Newsletter</p>
+        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+        <form action="" class="position-relative" method="post">
+          <input type="email" class="form-control rounded-pill" id="inputEmail44">
+          <button type="button" class="btn rounded-pill btn-9 btn-2">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////// FOOTER ////////////////////////////////////////////////////////////////////////////////// -->
+  <section class="footer-section mt-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="foot-head fw-bold mb-2">ARSHA</h4>
+          <p class="foot-body">
+            A108 Adam Street <br> New York, NY 535022 <br> United States <br><br>
+            <b>Phone:</b> +1 2345678910 <br> <b>Email:</b> info@example.com
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mt-4 mt-md-0">
+          <h6 class="foot-head fw-bold">Useful Links</h6>
+          <ul class="ps-1">
+            <li class="mt-3 mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Home</a></li>
+            <li class="mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">About us</a></li>
+            <li class="mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Services</a></li>
+            <li class="mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Terms of service</a>
+            </li>
+            <li class="mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+          <h6 class="foot-head fw-bold">Our Services</h6>
+          <ul class="ps-1">
+            <li class="mt-3 mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Web Design</a></li>
+            <li class="mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Web Development</a></li>
+            <li class="mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Product Management</a>
+            </li>
+            <li class="mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Marketing</a></li>
+            <li class="mb-3"><i class="fa-solid fa-angle-right"></i><a href="#top" class="ms-2">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+          <h6 class="foot-head fw-bold">Our Social Networks</h6>
+          <p class="pt-3 pb-2">
+            Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies
+          </p>
+          <div class="foot-fa-icons">
+            <a href="#top"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#top"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#top"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#top"><i class="fa-brands fa-skype"></i></a>
+            <a href="#top"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ////////////////////// arrow up ////////////////////////////////////////////////////////////////////////////////// -->
+  <a href="#top" id="arrow-up" class="d-none"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- ////////////////////// Project End ////////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- linking js for bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <!-- linking js for fontAwesome -->
+  <script src="js/all.min.js"></script>
+  <!-- linking js for jquerry -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- linking css file -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
